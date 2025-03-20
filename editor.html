@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صناع الموقع - أخبار التكنولوجيا</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* Additional style for team layout */
+        .team-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .team-member {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .member-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+            background: rgba(79, 156, 251, 0.1);
+            font-size: 5rem;
+            color: #4f9cfb;
+        }
+        
+        .member-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .member-info h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #f8f9fa;
+        }
+        
+        .member-info h3 {
+            font-size: 1.1rem;
+            color: #4f9cfb;
+            margin-bottom: 1rem;
+        }
+        
+        .member-info p {
+            flex: 1;
+            color: #b2bec3;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>أخبار التكنولوجيا</h1>
+            <nav>
+                <ul>
+                    <li><a href="main.html">الرئيسية</a></li>
+                    <li><a href="phones.html">الهواتف</a></li>
+                    <li><a href="computers.html">الحاسبات</a></li>
+                    <li><a href="ai.html">الذكاء الاصطناعي</a></li>
+                    <li><a href="cybersecurity.html">الأمن السيبراني</a></li>
+                    <li><a href="software.html">البرمجيات</a></li>
+                    <li><a href="gadgets.html">الأجهزة</a></li>
+                    <li><a href="gaming.html">الألعاب</a></li>
+                    <li><a href="editor.html" class="active">صناع الموقع</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="page-header">
+                <h1>فريق العمل المسؤول عن تطوير وإدارة الموقع</h1>
+                <p>تعرف على الفريق الذي يعمل على تطوير وإدارة موقع أخبار التكنولوجيا</p>
+            </section>
+            
+            <section class="team-container">
+                <div class="team-member">
+                    <div class="member-image"><i class="fas fa-user"></i></div>
+                    <div class="member-info">
+                        <h2>أحمد عماد صادق</h2>
+                        <h3>مهندس برمجيات</h3>
+                        <p>مهندس برمجيات محترف مع خبرة أكثر من 5 سنوات في تطوير مواقع الويب والتطبيقات</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/ahmed-alaayq-21a55b279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/ahmedalaayq"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image"><i class="fas fa-user"></i></div>
+                    <div class="member-info">
+                        <h2>كريم عبد الشهيد</h2>
+                        <h3>مصمم جرافيك</h3>
+                        <p>مصمم جرافيك مبدع مع خبرة في تصميم واجهات المستخدم وتجربة المستخدم</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image"><i class="fas fa-user"></i></div>
+                    <div class="member-info">
+                        <h2>سارة كمال</h2>
+                        <h3>كاتبة محتوى</h3>
+                        <p>كاتبة محتوى متخصصة في مجال التكنولوجيا والأخبار التقنية</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-medium"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image"><i class="fas fa-user"></i></div>
+                    <div class="member-info">
+                        <h2>زينب رمضان</h2>
+                        <h3>كاتبة محتوى</h3>
+                        <p>كاتبة محتوى مبدعة متخصصة في مجال التكنولوجيا والمقالات التقنية</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-medium"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Videos Section -->
+            
+        </main>
+        
+        <footer>
+            <p>جميع الحقوق محفوظة &copy; 2025 أخبار التكنولوجيا</p>
+        </footer>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

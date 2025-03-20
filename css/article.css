@@ -1,0 +1,132 @@
+/* Article pages specific styles */
+
+/* Page header */
+.page-header {
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.page-header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.2rem;
+}
+
+.page-header p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* Hero section for category pages */
+.hero {
+    background: linear-gradient(to right, rgba(41, 128, 185, 0.1), rgba(44, 62, 80, 0.1));
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.hero h1 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    color: #34495e;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Specific article styling */
+.news {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+    .news {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Search bar */
+.search-container {
+    max-width: 1200px;
+    margin: 0 auto 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.search-box {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-box input {
+    flex: 1;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.search-box button {
+    padding: 0 1.5rem;
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.search-box button:hover {
+    background: linear-gradient(135deg, #2980b9, #1e293b);
+}
+
+/* Category specific color themes */
+.ai-theme .page-header,
+.ai-theme .hero {
+    background: linear-gradient(135deg, #5614B0, #8E2DE2);
+}
+
+.computers-theme .page-header,
+.computers-theme .hero {
+    background: linear-gradient(135deg, #304352, #d7d2cc);
+}
+
+.cybersecurity-theme .page-header,
+.cybersecurity-theme .hero {
+    background: linear-gradient(135deg, #232526, #414345);
+}
+
+.software-theme .page-header,
+.software-theme .hero {
+    background: linear-gradient(135deg, #4DA0B0, #D39D38);
+}
+
+.gadgets-theme .page-header,
+.gadgets-theme .hero {
+    background: linear-gradient(135deg, #136a8a, #267871);
+}
+
+.gaming-theme .page-header,
+.gaming-theme .hero {
+    background: linear-gradient(135deg, #8E0E00, #1F1C18);
+}
